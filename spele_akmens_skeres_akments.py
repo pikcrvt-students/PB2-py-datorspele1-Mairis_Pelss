@@ -1,6 +1,6 @@
 from time import sleep
 from random import randint
-from oc import system
+from os import system
 
 akmens_dators = '''
                                  ██████                                
@@ -287,43 +287,80 @@ datora_izvele = randint(1,3)
 
 lietotaja_izvele = input("Jūsu izvelē: ")
 
-# akmens_pacelts_dators | akmens_pacelts_lietotajs
-# 1 akmens_dators | akmens_dators
-# 2 skeres_dators | skeres_lietotajs
-# 3 papirs_dators | papirs_lietotajs
+while True:
+	if lietotaja_izvele == 1 or 2 or 3:
+		# akmens_pacelts_dators | akmens_pacelts_lietotajs
+		# 1 akmens_dators | akmens_dators
+		# 2 skeres_dators | skeres_lietotajs
+		# 3 papirs_dators | papirs_lietotajs
 
-system('cls')
+		system('cls')
 
-print(akmens_pacelts_datorslietotajs)
-print(akmens_pacelts_lietotajs)
-sleep(0.5)
+		print(akmens_pacelts_dators)
+		print(akmens_pacelts_lietotajs)
+		sleep(0.5)
 
-system('cls')
-print(akmens_dators)
-print(akmens_lietotajs)
-sleep(0.5)
-
-system('cls')
-print(akmens_pacelts_datorslietotajs)
-print(akmens_pacelts_lietotajs)
-sleep(0.5)
-
-system('cls')
-print(akmens_dators)
-print(akmens_lietotajs)
-sleep(0.5)
-
-system('cls')
-print(akmens_pacelts_datorslietotajs)
-print(akmens_pacelts_lietotajs)
-sleep(0.5)
-
-system('cls')
-if datora_izvele = 1:
-	print(akmens_dators)
-	if lietotaja_izvele = 1:
+		system('cls')
+		print(akmens_dators)
 		print(akmens_lietotajs)
-		print("Neizšķirts!")
-	elif lietotaja_izvele = 2:
-		print(skeres_lietotajs)
-		print('Uzver dators!')
+		sleep(0.5)
+
+		system('cls')
+		print(akmens_pacelts_dators)
+		print(akmens_pacelts_lietotajs)
+		sleep(0.5)
+
+		system('cls')
+		print(akmens_dators)
+		print(akmens_lietotajs)
+		sleep(0.5)
+
+		system('cls')
+		print(akmens_pacelts_dators)
+		print(akmens_pacelts_lietotajs)
+		sleep(0.5)
+
+		system('cls')
+		if datora_izvele == 1:
+			print(akmens_dators)
+			if lietotaja_izvele == 1:
+				print(akmens_lietotajs)
+				print("Neizšķirts!")
+			elif lietotaja_izvele == 2:
+				print(skeres_lietotajs)
+				print('Uzvar dators!')
+			else:
+				print(papirs_lietotajs)
+				print('Uzvar lietotājs!')
+		elif datora_izvele == 2:
+			print(skeres_dators)
+			if lietotaja_izvele == 1:
+				print(akmens_lietotajs)
+				print("Uzvar lietotājs!")
+			elif lietotaja_izvele == 2:
+				print(skeres_lietotajs)
+				print('Neizšķirts!')
+			else:
+				print(papirs_lietotajs)
+				print('Uzvar dators!')
+		else:
+			print(papirs_dators)
+			if lietotaja_izvele == 1:
+				print(akmens_lietotajs)
+				print("Uzvar dators!")
+			elif lietotaja_izvele == 2:
+				print(skeres_lietotajs)
+				print('Uzvar lietotājs!')
+			else:
+				print(papirs_lietotajs)
+				print('Neizšķirts')
+	else:
+		print('Kļūda, lai izvēletos ko tu metisi uzrakstiet nummuru 1 - Akmens 2 - Šķeres 3 - Papīrs!')
+		lietotaja_izvele = input("Jūsu izvelē: ")
+	spelet_velreiz = input('Uzspēlet vēlreiz? Y')
+	if spelet_velreiz == y or Y:
+		continue
+	else:
+		break
+system('pause')
+	
