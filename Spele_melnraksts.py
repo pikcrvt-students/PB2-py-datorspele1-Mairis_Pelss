@@ -276,15 +276,6 @@ skeres_lietotajs = '''
                                █████████████████████████                             
                                '''
 
-print('''
-Šaja dator spēle jūs spēlejat ar datoru AKMENS-ŠĶĒRES-AKMENTIŅŠ
-Ievadiet savu izvēli no piedāvatiem:
-1 - Akmens
-2 - Šķēres
-3 - Papīrs ''')
-
-datora_izvele = randint(1,3)
-
 while True:		   
 	print('''
 	Šaja dator spēle jūs spēlejat ar datoru AKMENS-ŠĶĒRES-AKMENTIŅŠ
