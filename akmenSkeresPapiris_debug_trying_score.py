@@ -1,8 +1,45 @@
 from random import randint
 
-def uzvares_serija()
-	for k in range(5, 0, -1):
-		if k == 0
+#def uzvares_serija():
+#	for k in range(5, 0, -1):
+#		if k == 0:
+
+
+def parbaudit_kas_uzvare():
+	if datora_izvele == 1:
+		print('akmens_dators')
+		if lietotaja_izvele == 1:
+			print('akmens_lietotajs')
+			print("Neizšķirts!")
+		elif lietotaja_izvele == 2:
+			print('skeres_lietotajs')
+			print('Uzvar dators!')
+		else:
+			print('papirs_lietotajs')
+			print('Uzvar lietotājs!')
+	elif datora_izvele == 2:
+		print('skeres_dators')
+		if lietotaja_izvele == 1:
+			print('akmens_lietotajs')
+			print("Uzvar lietotājs!")
+		elif lietotaja_izvele == 2:
+			print('skeres_lietotajs')
+			print('Neizšķirts!')
+		else:
+			print('papirs_lietotajs')
+			print('Uzvar dators!')
+	else:
+		print('papirs_dators')
+		if lietotaja_izvele == 1:
+			print('akmens_lietotajs')
+			print("Uzvar dators!")
+		elif lietotaja_izvele == 2:
+			print('skeres_lietotajs')
+			print('Uzvar lietotājs!')
+		else:
+			print('papirs_lietotajs')
+			print('Neizšķirts')
+
 
 while True:
 
@@ -15,7 +52,7 @@ while True:
 	   2 - Apskatīt labakas uzvares sērijas
 	   3 - Iziet no spēles
 	   ''')
-	menu = input()
+	menu = int(input())
 
 	if menu == 1:
 		while True:		   
@@ -52,46 +89,18 @@ while True:
 			# 2 skeres_dators | skeres_lietotajs
 			# 3 papirs_dators | papirs_lietotajs
 
-			if datora_izvele == 1:
-				print('akmens_dators')
-				if lietotaja_izvele == 1:
-					print('akmens_lietotajs')
-					print("Neizšķirts!")
-				elif lietotaja_izvele == 2:
-					print('skeres_lietotajs')
-					print('Uzvar dators!')
-				else:
-					print('papirs_lietotajs')
-					print('Uzvar lietotājs!')
-			elif datora_izvele == 2:
-				print('skeres_dators')
-				if lietotaja_izvele == 1:
-					print('akmens_lietotajs')
-					print("Uzvar lietotājs!")
-				elif lietotaja_izvele == 2:
-					print('skeres_lietotajs')
-					print('Neizšķirts!')
-				else:
-					print('papirs_lietotajs')
-					print('Uzvar dators!')
-			else:
-				print('papirs_dators)
-				if lietotaja_izvele == 1:
-					print('akmens_lietotajs')
-					print("Uzvar dators!")
-				elif lietotaja_izvele == 2:
-					print('skeres_lietotajs')
-					print('Uzvar lietotājs!')
-				else:
-					print('papirs_lietotajs')
-					print('Neizšķirts')
+			parbaudit_kas_uzvare()
 					
 			velreiz = input('Vēlaties uzspēlet velreiz? y/n')
+
 			if velreiz == 'y' or 'Y':
 				continue
 			else:
 				break
+		
 	elif menu == 2:
+		print('tabula vēl izstrādajuma')
 		# izvada masiva rezultāts
+		continue
 	else:
 		break
